@@ -5,8 +5,6 @@ import json
 from dotenv import load_dotenv
 import flask
 
-import threading
-import asyncio
 
 app = flask.Flask(__name__)
 # Loading environment variables
