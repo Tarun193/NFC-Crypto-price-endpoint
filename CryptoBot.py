@@ -3,7 +3,6 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 from dotenv import load_dotenv
-import discord
 import flask
 
 import threading
@@ -27,10 +26,6 @@ headers = {
     "Accepts": "application/json",
     "X-CMC_PRO_API_KEY": getenv("API_KEY"),
 }
-
-Intents = discord.Intents.default()
-Intents.members = True
-client = discord.Client(intents=Intents)
 
 
 def Get_Data():
